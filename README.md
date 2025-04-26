@@ -1,30 +1,35 @@
-# Conti Ransomware - IOC Dataset (MITRE ATT&CK Classification)
+# IOCS Conti
 
-This repository contains structured data extracted from Conti ransomware operations, specifically related to indicators of compromise (IOCs) discovered through leaked internal communications and victim reports.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Data Status: Active](https://img.shields.io/badge/Data-Active-brightgreen)](https://github.com/ramonfure/iocs_conti) [![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-blue)](https://attack.mitre.org/)
 
-## 📁 Folder: `data/`
+## Overview
 
-The `data/` folder contains the cleaned and structured IOC dataset (`IOCs_Conti.csv`) used in the analysis for the Master's Thesis titled:
+This repository contains Indicators of Compromise (IoCs) extracted from the leaked internal communications of the Conti ransomware group. The IoCs have been mapped to the MITRE ATT&CK framework for enhanced contextualization and analysis.
 
-> “Strategic and Relational Analysis of Conti Ransomware Operations Based on Leaked Data and MITRE ATT&CK Framework”
+A sample of these IoCs is included in the appendix of the corresponding study, while the complete dataset is made available here for researchers, analysts, and security practitioners.
 
-The CSV file includes the following columns:
+## Dataset Fields
 
-- `MITRE Tactic/Technique`: Categorization of the IOC under MITRE ATT&CK
-- `Date`: Timestamp of the event or observation
-- `From`: Actor/source involved in the communication
-- `To`: Recipient/target of the communication
-- `IOC Summary`: A short description of the detected indicator
+The CSV file includes the following fields:
 
-This dataset was prepared using Python, cleaned to remove irrelevant or duplicate entries, and manually reviewed to ensure alignment with the MITRE ATT&CK framework. Only indicators with real analytical value were retained.
+- **MITRE Tactic/Technique**: Mapping to specific ATT&CK tactics and techniques.
+- **Timestamp**: Date and time when the IOC was extracted.
+- **From**: Originating user or entity.
+- **To**: Targeted user or entity.
+- **IOC Extracted**: Indicator of Compromise identified.
 
-## ⚠️ Ethical & Legal Considerations
+## Access
 
-All data included in this repository originates from publicly leaked sources released by the Conti group itself during 2021–2022. The dataset is provided exclusively for academic and research purposes and does not contain personally identifiable information (PII). Use responsibly.
+The full dataset can be found in the file:
 
-## 📚 Citation
+```bash
+MITRE_IOCs_Conti.csv
+```
 
-If you use this dataset or refer to this repository, please cite:
+## License
 
-**Ramonfure (2024). Strategic and Relational Analysis of Conti Ransomware Operations Based on Leaked Data and MITRE ATT&CK Framework. GitHub Repository.**
+This project is licensed under the [MIT License](LICENSE).
 
+---
+
+> If you use this data in your work, please consider citing the repository. Contributions and feedback are welcome!
